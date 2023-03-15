@@ -1,0 +1,664 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Mar 15 16:01:01 2023
+# Process ID: 25504
+# Current directory: C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.runs/synth_1/top.vds
+# Journal file: C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a35ticsg324-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 18232
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1009.707 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/sources_1/imports/sources_1/new/top.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'clk' [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/sources_1/imports/sources_1/new/clk.sv:23]
+	Parameter MULT bound to: 10 - type: integer 
+	Parameter CLKOUT1_DIVIDE bound to: 3 - type: integer 
+	Parameter CLKOUT2_DIVIDE bound to: 3 - type: integer 
+	Parameter CLKOUT3_DIVIDE bound to: 6 - type: integer 
+	Parameter CLKOUT4_DIVIDE bound to: 6 - type: integer 
+	Parameter CLKOUT5_DIVIDE bound to: 10 - type: integer 
+	Parameter CLKOUT6_DIVIDE bound to: 10 - type: integer 
+	Parameter CLKOUT0_DIVIDE bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_BASE' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:40118]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_DIVIDE bound to: 3 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_DIVIDE bound to: 3 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT2_PHASE bound to: 90.000000 - type: double 
+	Parameter CLKOUT3_DIVIDE bound to: 6 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 6 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT4_PHASE bound to: 45.000000 - type: double 
+	Parameter CLKOUT5_DIVIDE bound to: 10 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT6_DIVIDE bound to: 10 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: double 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.000000 - type: double 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_BASE' (1#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:40118]
+INFO: [Synth 8-6155] done synthesizing module 'clk' (2#1) [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/sources_1/imports/sources_1/new/clk.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'clk__parameterized0' [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/sources_1/imports/sources_1/new/clk.sv:23]
+	Parameter MULT bound to: 6 - type: integer 
+	Parameter CLKOUT1_DIVIDE bound to: 3 - type: integer 
+	Parameter CLKOUT2_DIVIDE bound to: 3 - type: integer 
+	Parameter CLKOUT3_DIVIDE bound to: 3 - type: integer 
+	Parameter CLKOUT4_DIVIDE bound to: 3 - type: integer 
+	Parameter CLKOUT5_DIVIDE bound to: 3 - type: integer 
+	Parameter CLKOUT6_DIVIDE bound to: 3 - type: integer 
+	Parameter CLKOUT0_DIVIDE bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_BASE__parameterized0' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:40118]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 6.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 3.000000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_DIVIDE bound to: 3 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_DIVIDE bound to: 3 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT2_PHASE bound to: 90.000000 - type: double 
+	Parameter CLKOUT3_DIVIDE bound to: 3 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 3 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT4_PHASE bound to: 45.000000 - type: double 
+	Parameter CLKOUT5_DIVIDE bound to: 3 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT6_DIVIDE bound to: 3 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: double 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.000000 - type: double 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_BASE__parameterized0' (2#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:40118]
+INFO: [Synth 8-6155] done synthesizing module 'clk__parameterized0' (2#1) [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/sources_1/imports/sources_1/new/clk.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYCTRL' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:35060]
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYCTRL' (3#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:35060]
+INFO: [Synth 8-6157] synthesizing module 'IOBUFDS' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36259]
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: FAST - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUFDS' (4#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36259]
+INFO: [Synth 8-6157] synthesizing module 'delay' [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/sources_1/imports/sources_1/imports/BSC/rx/delay.sv:1]
+	Parameter TAPS bound to: 10 - type: integer 
+	Parameter TYPE bound to: VAR_LOAD - type: string 
+	Parameter SIGNAL_PATTERN bound to: CLOCK - type: string 
+INFO: [Synth 8-6157] synthesizing module 'IDELAYE2' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:35073]
+	Parameter CINVCTRL_SEL bound to: FALSE - type: string 
+	Parameter DELAY_SRC bound to: IDATAIN - type: string 
+	Parameter HIGH_PERFORMANCE_MODE bound to: TRUE - type: string 
+	Parameter IDELAY_TYPE bound to: VAR_LOAD - type: string 
+	Parameter IDELAY_VALUE bound to: 10 - type: integer 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_DATAIN_INVERTED bound to: 1'b0 
+	Parameter IS_IDATAIN_INVERTED bound to: 1'b0 
+	Parameter PIPE_SEL bound to: FALSE - type: string 
+	Parameter REFCLK_FREQUENCY bound to: 200.000000 - type: double 
+	Parameter SIGNAL_PATTERN bound to: CLOCK - type: string 
+	Parameter SIM_DELAY_D bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYE2' (5#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:35073]
+INFO: [Synth 8-6155] done synthesizing module 'delay' (6#1) [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/sources_1/imports/sources_1/imports/BSC/rx/delay.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: FAST - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (7#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242]
+INFO: [Synth 8-6157] synthesizing module 'delay__parameterized0' [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/sources_1/imports/sources_1/imports/BSC/rx/delay.sv:1]
+	Parameter TAPS bound to: 0 - type: integer 
+	Parameter TYPE bound to: VAR_LOAD - type: string 
+	Parameter SIGNAL_PATTERN bound to: DATA - type: string 
+INFO: [Synth 8-6157] synthesizing module 'IDELAYE2__parameterized0' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:35073]
+	Parameter CINVCTRL_SEL bound to: FALSE - type: string 
+	Parameter DELAY_SRC bound to: IDATAIN - type: string 
+	Parameter HIGH_PERFORMANCE_MODE bound to: TRUE - type: string 
+	Parameter IDELAY_TYPE bound to: VAR_LOAD - type: string 
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_DATAIN_INVERTED bound to: 1'b0 
+	Parameter IS_IDATAIN_INVERTED bound to: 1'b0 
+	Parameter PIPE_SEL bound to: FALSE - type: string 
+	Parameter REFCLK_FREQUENCY bound to: 200.000000 - type: double 
+	Parameter SIGNAL_PATTERN bound to: DATA - type: string 
+	Parameter SIM_DELAY_D bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYE2__parameterized0' (7#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:35073]
+INFO: [Synth 8-6155] done synthesizing module 'delay__parameterized0' (7#1) [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/sources_1/imports/sources_1/imports/BSC/rx/delay.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'rd_single' [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/sources_1/imports/sources_1/imports/BSC/rx/rd_single.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'deserializer' [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/sources_1/imports/sources_1/imports/BSC/rx/deserializer.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'ISERDESE2' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:38620]
+	Parameter DATA_RATE bound to: DDR - type: string 
+	Parameter DATA_WIDTH bound to: 4 - type: integer 
+	Parameter DYN_CLKDIV_INV_EN bound to: FALSE - type: string 
+	Parameter DYN_CLK_INV_EN bound to: FALSE - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter INIT_Q3 bound to: 1'b0 
+	Parameter INIT_Q4 bound to: 1'b0 
+	Parameter INTERFACE_TYPE bound to: MEMORY - type: string 
+	Parameter IOBDELAY bound to: IFD - type: string 
+	Parameter IS_CLKB_INVERTED bound to: 1'b0 
+	Parameter IS_CLKDIVP_INVERTED bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_OCLKB_INVERTED bound to: 1'b0 
+	Parameter IS_OCLK_INVERTED bound to: 1'b0 
+	Parameter NUM_CE bound to: 2 - type: integer 
+	Parameter OFB_USED bound to: FALSE - type: string 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter SRVAL_Q1 bound to: 1'b0 
+	Parameter SRVAL_Q2 bound to: 1'b0 
+	Parameter SRVAL_Q3 bound to: 1'b0 
+	Parameter SRVAL_Q4 bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'ISERDESE2' (8#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:38620]
+INFO: [Synth 8-6155] done synthesizing module 'deserializer' (9#1) [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/sources_1/imports/sources_1/imports/BSC/rx/deserializer.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'rd_single' (10#1) [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/sources_1/imports/sources_1/imports/BSC/rx/rd_single.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'top' (11#1) [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/sources_1/imports/sources_1/new/top.sv:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1009.707 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1009.707 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1009.707 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1009.707 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/Arty A7 35T/Arty-A7-35-Master.xdc]
+Finished Parsing XDC File [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/Arty A7 35T/Arty-A7-35-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/Arty A7 35T/Arty-A7-35-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[0]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[0]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[1]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[1]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[2]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[2]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[3]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[3]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[4]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[4]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[5]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[5]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[6]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[6]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[7]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[7]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[8]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[8]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[9]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[9]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[10]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[10]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[11]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[11]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[12]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[12]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[13]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[13]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[0]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[0]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[1]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[1]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[2]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[2]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_cas_n'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_cas_n'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ck_p[0]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ck_p[0]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ck_n[0]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ck_n[0]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_cke[0]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_cke[0]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_cs_n[0]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_cs_n[0]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dm[0]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dm[0]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dm[1]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dm[1]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[1]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[1]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[2]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[2]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[3]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[3]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[4]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[4]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[5]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[5]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[6]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[6]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[7]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[7]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[8]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[8]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[9]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[9]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[10]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:80]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[10]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[11]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[11]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[12]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[12]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[13]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[13]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[14]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[14]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:89]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[15]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[15]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dqs_n[1]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dqs_n[1]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dqs_p[1]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dqs_p[1]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_odt[0]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_odt[0]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_odt[0]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_odt[0]'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ras_n'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ras_n'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:107]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:107]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_reset_n'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_reset_n'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:109]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_we_n'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:110]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:110]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_we_n'. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.srcs/constrs_1/imports/imports/ddr/openarty.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1009.707 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
+  IOBUFDS => IOBUFDS (IBUFDS, INV, OBUFTDS(x2)): 1 instance 
+  MMCME2_BASE => MMCME2_ADV: 2 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1009.707 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1009.707 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticsg324-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1009.707 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1009.707 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1009.707 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1009.707 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1009.707 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1009.707 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1009.707 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1009.707 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1009.707 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1009.707 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1009.707 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1009.707 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1009.707 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |IDELAYCTRL  |     1|
+|2     |IDELAYE2    |     2|
+|4     |ISERDESE2   |     1|
+|5     |LUT1        |     2|
+|6     |MMCME2_BASE |     2|
+|7     |IBUF        |    13|
+|8     |IOBUF       |     1|
+|9     |IOBUFDS     |     1|
+|10    |OBUF        |     4|
+|11    |OBUFT       |     8|
++------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1009.707 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1009.707 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1009.707 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1009.707 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 2 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1009.707 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
+  IOBUFDS => IOBUFDS (IBUFDS, INV, OBUFTDS(x2)): 1 instance 
+  MMCME2_BASE => MMCME2_ADV: 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+49 Infos, 92 Warnings, 92 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1009.707 ; gain = 0.000
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 15 16:01:30 2023...
