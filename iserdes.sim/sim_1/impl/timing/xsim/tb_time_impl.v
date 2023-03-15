@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Wed Mar 15 16:02:44 2023
+// Date        : Wed Mar 15 16:06:01 2023
 // Host        : DESKTOP-AAHUPRO running 64-bit major release  (build 9200)
 // Command     : write_verilog -mode timesim -nolib -sdf_anno true -force -file
 //               C:/Users/weiji/Desktop/DDR3_vivado/iserdes/iserdes.sim/sim_1/impl/timing/xsim/tb_time_impl.v
